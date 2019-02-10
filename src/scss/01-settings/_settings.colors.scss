@@ -1,0 +1,63 @@
+/* ==========================================================================
+   #COLORS
+   ========================================================================== */
+
+/* Brand */
+
+$color-primary:               #6200EE;
+$color-primary-variant:       #3700B3;
+$color-secondary:             #03DAC6;
+$color-secondary-variant:     #018786;
+
+$brand-color:                 $color-primary;
+
+$color-brand-dark:            darken($brand-color, 5%);
+$color-brand:                 $brand-color;
+$color-brand-light:           lighten($brand-color, 5%);
+$color-brand-secondary-dark:  darken($brand-color-secondary, 5%);
+$color-brand-secondary:       $brand-color-secondary;
+$color-brand-secondary-light: lighten($brand-color-secondary, 5%);
+
+$color-brand-90:              lighten($color-brand, 10%);
+$color-brand-80:              lighten($color-brand, 25%);
+$color-brand-50:              lighten($color-brand, 50%);
+$color-brand-20:              lighten($color-brand, 80%);
+$color-brand-10:              lighten($color-brand, 90%);
+$color-brand-05:              lighten($color-brand, 95%);
+
+/* Neutral */
+
+$color-black:                 #000;
+$color-gray-90:               lighten($color-black, 10%);
+$color-gray-80:               lighten($color-black, 25%);
+$color-gray-50:               lighten($color-black, 50%);
+$color-gray-20:               lighten($color-black, 80%);
+$color-gray-10:               lighten($color-black, 90%);
+$color-gray-05:               lighten($color-black, 95%);
+$color-white:                 #fff;
+
+$color-on-primary:            $color-white;
+$color-on-secondary:          $color-black;
+
+/* Social */
+
+$color-facebook:              #3b5998;
+$color-linkedin:              #0077b5;
+$color-twitter:               #1da1f2;
+$color-youtube:               #f00;
+
+/* Utility */
+
+$color-error:                 #B00020;
+$color-error-dark:            darken($color-error, 20%);
+$color-error-light:           lighten($color-error, 20%);
+$color-warning:               #ff851b;
+$color-warning-dark:          darken($color-warning, 10%);
+$color-warning-light:         lighten($color-warning, 20%);
+$color-highlight:             #ffdc00;
+$color-success:               #2ecc40;
+$color-success-dark:          darken($color-success, 5%);
+$color-success-light:         lighten($color-success, 20%);
+$color-information:           $color-secondary;
+$color-information-dark:      darken($color-information, 5%);
+$color-information-light:     lighten($color-information, 20%);

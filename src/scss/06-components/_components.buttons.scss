@@ -1,0 +1,99 @@
+/* ==========================================================================
+   #BUTTONS
+   ========================================================================== */
+
+.c-btn {
+  background-color: $color-white;
+  border: $base-border-width-small solid $color-brand-light;
+  border-radius: $base-border-radius-large;
+  color: $color-brand;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: $weight-bold;
+  line-height: $base-line-height;
+  padding: $base-spacing-unit-small $base-spacing-unit;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.25s, background-color 0.25s, box-shadow 0.25s, transform 0.25s;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &:focus,
+  &:hover:not([disabled]) {
+    color: $color-brand-80;
+    border-color: $color-brand-80;
+    outline: 0;
+  }
+
+  &[disabled] {
+    @include opacity(50);
+  }
+
+  /* Icon */
+
+  .c-btn__icon {
+    margin-right: $base-spacing-unit-xs;
+  }
+
+  /**
+   * Primary
+   */
+
+  &.c-btn--primary {
+    background-color: $color-brand;
+    border-color: $color-brand;
+    color: $color-white;
+
+    &:focus,
+    &:hover:not([disabled]) {
+      color: $color-on-primary;
+      border-color: $color-brand-80;
+      background-color: $color-brand-80;
+    }
+  }
+
+  &.c-btn--round {
+    border-radius: $base-border-radius-extra-large;
+    box-shadow: $base-box-shadow;
+
+    &[disabled] {
+      @include opacity(0);
+    }
+  }
+
+  /**
+   * Text
+   */
+
+  &.c-btn--text {
+    background-color: transparent;
+    border-color: transparent;
+    color: $color-brand;
+
+    &:focus,
+    &:hover:not([disabled]) {
+      color: $color-brand-80;
+      border-color: transparent;
+    }
+  }
+
+  /**
+   * Block
+   */
+
+  &.c-btn--block {
+    display: block;
+    width: 100%;
+  }
+
+  /**
+   * Small
+   */
+
+  &.c-btn--small {
+    padding: $base-spacing-unit-xs $base-spacing-unit-small;
+  }
+}
